@@ -1,26 +1,32 @@
-
+#
 # Conditional build:
 %bcond_without	tests	# do perform "make test"
-
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Array
 %define pnam	Uniq
-Summary:	Array::Uniq - Pure perl uniq module. 
+Summary:	Array::Uniq - Pure Perl uniq module
+Summary(pl):	Array::Uniq - czysto perlowy modu³ uniq
 Name:		perl-Array-Uniq
 Version:	0.02
 Release:	1
 # same as perl
-License:	GPL/Artistic
+License:	GPL or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	208d737de9e0ead97df952a5d66bd406
-BuildRequires:	perl-devel >= 5.6
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Similar functionality is available at shell prompts of *nix O/S.
 This modules is attempting to provide the same to Perl programming,
+
+%description -l pl
+Podobna funkcjonalno¶æ jest dostêpna z poziomu pow³oki systemów
+uniksowych. Ten modu³ jest prób± dostarczenia tego samego programom w
+Perlu.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
@@ -35,7 +41,9 @@ This modules is attempting to provide the same to Perl programming,
 
 %install
 rm -rf $RPM_BUILD_ROOT
-make install DESTDIR=$RPM_BUILD_ROOT
+
+%{__make} install \
+	DESTDIR=$RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
