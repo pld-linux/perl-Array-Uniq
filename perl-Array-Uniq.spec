@@ -4,7 +4,7 @@
 #
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Array
-%define pnam	Uniq
+%define	pnam	Uniq
 Summary:	Array::Uniq - pure Perl uniq module
 Summary(pl):	Array::Uniq - czysto perlowy modu³ uniq
 Name:		perl-Array-Uniq
