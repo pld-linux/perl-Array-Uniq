@@ -9,7 +9,7 @@ Summary:	Array::Uniq - pure Perl uniq module
 Summary(pl):	Array::Uniq - czysto perlowy modu³ uniq
 Name:		perl-Array-Uniq
 Version:	0.02
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
