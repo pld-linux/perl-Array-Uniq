@@ -6,7 +6,7 @@
 %define		pdir	Array
 %define		pnam	Uniq
 Summary:	Array::Uniq - pure Perl uniq module
-Summary(pl):	Array::Uniq - czysto perlowy modu³ uniq
+Summary(pl.UTF-8):   Array::Uniq - czysto perlowy moduÅ‚ uniq
 Name:		perl-Array-Uniq
 Version:	0.02
 Release:	2
@@ -24,9 +24,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Similar functionality is available at shell prompts of *nix O/S.
 This modules is attempting to provide the same to Perl programming,
 
-%description -l pl
-Podobna funkcjonalno¶æ jest dostêpna z poziomu pow³oki systemów
-uniksowych. Ten modu³ jest prób± dostarczenia tego samego programom w
+%description -l pl.UTF-8
+Podobna funkcjonalnoÅ›Ä‡ jest dostÄ™pna z poziomu powÅ‚oki systemÃ³w
+uniksowych. Ten moduÅ‚ jest prÃ³bÄ… dostarczenia tego samego programom w
 Perlu.
 
 %prep
