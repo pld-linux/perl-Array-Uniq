@@ -6,7 +6,7 @@
 %define		pdir	Array
 %define		pnam	Uniq
 Summary:	Array::Uniq - pure Perl uniq module
-Summary(pl.UTF-8):   Array::Uniq - czysto perlowy moduł uniq
+Summary(pl.UTF-8):	Array::Uniq - czysto perlowy moduł uniq
 Name:		perl-Array-Uniq
 Version:	0.02
 Release:	2
