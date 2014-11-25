@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Array
 %define		pnam	Uniq
+%include	/usr/lib/rpm/macros.perl
 Summary:	Array::Uniq - pure Perl uniq module
 Summary(pl.UTF-8):	Array::Uniq - czysto perlowy moduł uniq
 Name:		perl-Array-Uniq
@@ -15,14 +15,15 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	208d737de9e0ead97df952a5d66bd406
+URL:		http://search.cpan.org/dist/Array-Uniq/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Similar functionality is available at shell prompts of *nix O/S.
-This modules is attempting to provide the same to Perl programming,
+Similar functionality is available at shell prompts of *nix O/S. This
+modules is attempting to provide the same to Perl programming,
 
 %description -l pl.UTF-8
 Podobna funkcjonalność jest dostępna z poziomu powłoki systemów
